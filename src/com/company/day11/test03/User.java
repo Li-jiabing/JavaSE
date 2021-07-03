@@ -10,7 +10,12 @@ public class User {
     //属性
     private int id;
     private String name;
+
     //构造方法
+    public User(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
 
     public int getId() {
         return id;
