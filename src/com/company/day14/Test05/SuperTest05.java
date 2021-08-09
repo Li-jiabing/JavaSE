@@ -1,5 +1,6 @@
 package com.company.day14.Test05;
 
+
 public class SuperTest05 {
     public static void main(String[] args) {
         Vip v = new Vip("张三");
