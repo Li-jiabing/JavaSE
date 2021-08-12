@@ -1,4 +1,4 @@
-package com.company.day17;
+package com.company.day17.接口在java中的基础语法;
 
 
 /**
@@ -25,6 +25,10 @@ public class Test03 {
 
         B1 b1 = (B1) a;
         ((B1) a).m2();
+
+        //直接向下转型为D可以吗？可以,一步到位
+        D d = (D)a;
+        d.m2();
 
         M m = new E();
         //经过测试，接口和接口之间在进行强制类型转换的时候，没有继承关系，也可以强转。

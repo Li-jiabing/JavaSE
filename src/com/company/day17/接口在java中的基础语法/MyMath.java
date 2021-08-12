@@ -1,4 +1,4 @@
-package com.company.day17;
+package com.company.day17.接口在java中的基础语法;
 
 import com.company.day12.test001.Animal;
 import com.company.day12.test001.Cat;

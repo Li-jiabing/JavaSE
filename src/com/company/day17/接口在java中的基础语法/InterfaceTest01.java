@@ -1,4 +1,4 @@
-package com.company.day17;
+package com.company.day17.接口在java中的基础语法;
 
 /**
  * 接口：
