@@ -1,7 +1,5 @@
 package API;
 
-import com.company.day08.Stu;
-
 /**
  *  String对象比较的时候必须使用equal方法
  */
