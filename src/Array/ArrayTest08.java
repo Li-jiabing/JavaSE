@@ -1,7 +1,5 @@
 package Array;
 
-import sun.lwawt.macosx.CSystemTray;
-
 /**
  * 关于一维数组的扩容。
  *      在java开发中，数组长度一旦确定不可变，那么数组满了怎么办？
