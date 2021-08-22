@@ -1,7 +1,9 @@
 package Array.homework;
 
+import exception.MyStackOperationException;
+
 public class MyStackTest {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws MyStackOperationException {
 
         //创建一个栈对象，初始化容量是10个
         MyStack myStack = new MyStack();

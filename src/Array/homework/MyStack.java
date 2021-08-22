@@ -1,5 +1,7 @@
 package Array.homework;
 
+import exception.MyStackOperationException;
+
 /**
  * 第一题：
  *      编写程序：使用一维数组，模拟栈数据结构
@@ -57,10 +59,15 @@ public class MyStack{
      * 压栈的方法
      * @param obj 被压入的元素
      */
-    public void push(Object obj){
+    public void push(Object obj) throws MyStackOperationException {
         if(index >= elements.length - 1){
-            System.out.println("压栈失败，栈已满");
-            return;
+//            System.out.println("压栈失败，栈已满");
+//            return;
+
+            //创建异常对象，然后手动将异常抛出去
+            MyStackOperationException e
+             = new MyStackOperationException("栈已满，压栈失败");
+            throw e;
         }
         //程序能够走到这里，说明栈没满
         //向栈中加1个元素，栈帧向上移动一个位置
@@ -75,10 +82,10 @@ public class MyStack{
      * 弹栈的方法，从数组中往外取元素，每取出一个元素，栈帧向下移动一位
      * @return
      */
-    public void pop() {
+    public void pop()  throws MyStackOperationException {
         if (index < 0 ){
-            System.out.println("栈已空，弹栈失败！");
-            return;
+            MyStackOperationException e = new MyStackOperationException("栈已空，弹栈失败");
+            throw e;
         }
         //程序能够执行到此处说明栈没有空。
         System.out.print("弹栈"+elements[index]+"元素成功,");
