@@ -13,8 +13,6 @@ import java.util.Collection;
  *          集合后期我么会学习"泛型"语法，目前先不用管。Collection中什么都能存储
  *          只要是Object的子类型就行（集合中不能直接存储基本数据类型，也不能存储对象，只能存储java对象的内存地址）
  *
- *      2.Collection中的常用方法
- *          boolean add(Object e)
  */
 public class CollectionTest01 {
     public static void main(String[] args) {
@@ -49,5 +47,28 @@ public class CollectionTest01 {
 
         //contains(Object o)   查看集合中是否包含这个元素
         System.out.println(collection.contains("绿巨人"));
+
+        //remove()   删除集合中某个元素
+        collection.remove("浩ke");
+        int adc = collection.size();
+        System.out.println(adc);
+
+        //isEmpty() 判断该集合中元素个数是否为0
+        System.out.println(collection.isEmpty());//false
+        collection.clear();
+        System.out.println(collection.isEmpty());//true,true表示集合中没有元素了
+
+        //toArray() 调用这个方法把集合转换为数组  使用的不多，了解一下。
+        collection.add("hello");
+        collection.add("hello");
+        collection.add("hello");
+        collection.add("hello");
+        collection.add(new Student());
+        Object[] obj = collection.toArray();
+        for (int i = 0; i < obj.length; i++) {
+            System.out.println(obj[i]);
+        }
+
+
     }
 }
