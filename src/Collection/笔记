@@ -6,7 +6,8 @@ Set集合存储元素特点：
     无序不可重复，无序表示存进去是这个顺去，取出来就不一定是这个顺序了，另外Set集合中元素没有下标。Set集合中的元素还不能重复。
 
 ArrayList：
-    ArrayList集合底层采用了数组结构，ArrayList集合是非线程安全的
+    ArrayList集合底层采用了数组结构，ArrayList集合是非线程安全的，ArrayList集合默认初始化容量是10，ArrayList集合的底层是Object类型的数组。
+    扩容1.5倍，建议给定一个与孤寂的初始化容量，减少数组的扩容次数，这是ArrayList集合比较重要的优化策略。
 
 LinkedList：
     LinkedList集合底层采用了双向链表数据结构
