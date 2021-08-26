@@ -1,7 +1,6 @@
 package Collection;
 
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
@@ -44,8 +43,7 @@ public class MapTest02 {
         //foreach
         //这种方式效率比较高，因为获取key和value都是直接从node对象中获取的属性值
         //这种方式比较适合于大数据量
-        for (Map.Entry<Integer,String> node : set
-             ) {
+        for (Map.Entry<Integer,String> node : set) {
             System.out.println(node.getKey()+"-->"+node.getValue());
         }
     }
